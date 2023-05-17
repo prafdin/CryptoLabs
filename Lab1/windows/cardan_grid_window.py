@@ -30,7 +30,7 @@ def run_generate_grid(sender, data):
 def create_window():
     with dpg.window(label="Cardan grid"):
         dpg.add_button(label="Select output folder", callback=add_file_dialog)
-        dpg.add_input_text(label="File name", tag="cardan_grid_file_name_tag")
+        dpg.add_input_text(label="File name with Cardan grid", tag="cardan_grid_file_name_tag")
         dpg.add_input_int(label="Enter an grid size", max_value=100, min_value=0, tag="cardan_grid_input_key")
         dpg.add_button(label="Generate", callback=run_generate_grid)
 
